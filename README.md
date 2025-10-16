@@ -23,6 +23,22 @@ It can classify images into **CIFAR-10 categories** and shows **10 detailed poin
 - Modern, responsive, and visually appealing interface.
 
 ---
+## Features and Discription
+
+| **Feature**                 | **Description**                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Real-time Prediction**    | The system uses a pre-trained ResNet18 model to classify uploaded images instantly.                  |
+| **Interactive UI**          | Users can upload images directly from the browser and immediately preview them before prediction.    |
+| **Detailed Class Info**     | For each predicted class, the app displays **10 key points** including features, uses, and examples. |
+| **Responsive Design**       | Works smoothly across desktop, tablet, and mobile screens with adaptive layout.                      |
+| **Gradient UI**             | Modern, visually appealing gradient-based interface for better user experience.                      |
+| **Extensible Architecture** | The modular design allows adding new models, datasets, or classes without changing core logic.       |
+| **Fast Feedback Loop**      | Users can try multiple images quickly and see predictions in real-time.                              |
+| **Preprocessing Pipeline**  | Images are automatically resized and normalized for the ResNet model, ensuring accuracy.             |
+| **Error Handling**          | Provides user-friendly feedback if the uploaded file is invalid or unsupported.                      |
+| **Educational Tool**        | Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.   |
+
+-------------------------------------------------
 
 ## **Technologies Used**
 - **Python 3.11**  
@@ -33,6 +49,26 @@ It can classify images into **CIFAR-10 categories** and shows **10 detailed poin
 - Deep learning & computer vision techniques  
 
 ---
+
+## **Folder Structure**
+
+| **Folder / File**          | **Description**                                     |
+|----------------------------|-----------------------------------------------------|
+| `backend/`                 | Contains backend scripts and trained model          |
+| `backend/infer.py`         | Logic for image prediction using ResNet18           |
+| `backend/train.py`         | Script to train the ResNet model                    |
+| `backend/checkpoint.pth`   | Pre-trained ResNet model (excluded from repo)       |
+| `data/`                    | Dataset storage folder                              |
+| `data/cifar-10-python.tar.gz` | CIFAR-10 dataset (excluded from repo)            |
+| `frontend/`                | Frontend files for web interface                    |
+| `frontend/index.html`      | HTML file for web UI                                |
+| `frontend/style.css`       | CSS styling for frontend                            |
+| `frontend/script.js`       | JavaScript for image upload & prediction            |
+| `requirements.txt`         | Python dependencies                                 |
+| `app.py`                   | Flask app entry point                               |
+
+-----------------------------------------
+
 ## **Quickstart / Installation & Run**
 
 ### **1. Clone the repository**
@@ -84,43 +120,8 @@ See predicted class & 10 detailed points about that class.
 
 Click Try Another to test a new image.
 
--------------------------------------------------
-## **Folder Structure**
-
-| **Folder / File**          | **Description**                                     |
-|----------------------------|-----------------------------------------------------|
-| `backend/`                 | Contains backend scripts and trained model          |
-| `backend/infer.py`         | Logic for image prediction using ResNet18           |
-| `backend/train.py`         | Script to train the ResNet model                    |
-| `backend/checkpoint.pth`   | Pre-trained ResNet model (excluded from repo)       |
-| `data/`                    | Dataset storage folder                              |
-| `data/cifar-10-python.tar.gz` | CIFAR-10 dataset (excluded from repo)            |
-| `frontend/`                | Frontend files for web interface                    |
-| `frontend/index.html`      | HTML file for web UI                                |
-| `frontend/style.css`       | CSS styling for frontend                            |
-| `frontend/script.js`       | JavaScript for image upload & prediction            |
-| `requirements.txt`         | Python dependencies                                 |
-| `app.py`                   | Flask app entry point                               |
-
-
-
 ------------------------------------------------------
-## Features and Discription
 
-| **Feature**                 | **Description**                                                                                      |
-| --------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Real-time Prediction**    | The system uses a pre-trained ResNet18 model to classify uploaded images instantly.                  |
-| **Interactive UI**          | Users can upload images directly from the browser and immediately preview them before prediction.    |
-| **Detailed Class Info**     | For each predicted class, the app displays **10 key points** including features, uses, and examples. |
-| **Responsive Design**       | Works smoothly across desktop, tablet, and mobile screens with adaptive layout.                      |
-| **Gradient UI**             | Modern, visually appealing gradient-based interface for better user experience.                      |
-| **Extensible Architecture** | The modular design allows adding new models, datasets, or classes without changing core logic.       |
-| **Fast Feedback Loop**      | Users can try multiple images quickly and see predictions in real-time.                              |
-| **Preprocessing Pipeline**  | Images are automatically resized and normalized for the ResNet model, ensuring accuracy.             |
-| **Error Handling**          | Provides user-friendly feedback if the uploaded file is invalid or unsupported.                      |
-| **Educational Tool**        | Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.   |
-
--------------------------------------------------
 ## Future Work:
 Add support for all CIFAR-10 classes
 
