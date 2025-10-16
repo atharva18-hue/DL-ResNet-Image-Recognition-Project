@@ -45,15 +45,22 @@ cd DL-ResNet-Image-Recognition-Project
 2. Create virtual environment
 python -m venv venv
 
+--------------------------------------
+
 3. Activate virtual environment
 # Windows
 venv\Scripts\activate
 
+--------------------------------------------
+
 # Linux / Mac
 source venv/bin/activate
 
+-----------------------------------------
+
 4. Install dependencies
 pip install -r requirements.txt
+-------------------------------------------------
 
 5. Download dataset & trained model
 
@@ -61,12 +68,16 @@ Place cifar-10-python.tar.gz in data/
 
 Place checkpoint.pth in backend/
 
+------------------------------------------
+
 6. Run the Flask app
 python app.py
 
+------------------------------
+
 7. Open in browser
 http://127.0.0.1:5000
-
+--------------------------------------------------
 
 Usage:
 
@@ -77,6 +88,8 @@ Preview the image immediately.
 See predicted class & 10 detailed points about that class.
 
 Click Try Another to test a new image.
+
+-------------------------------------------------
 
 Folder Structure
 DL-ResNet-Image-Recognition-Project/
@@ -97,20 +110,25 @@ DL-ResNet-Image-Recognition-Project/
 ├── requirements.txt      # Python dependencies
 └── app.py                # Flask app entry point
 
-Features (Detailed)
-Feature	Description
-Real-time Prediction	The system uses a pre-trained ResNet18 model to classify uploaded images instantly.
-Interactive UI	Users can upload images directly from the browser and immediately preview them before prediction.
-Detailed Class Info	For each predicted class, the app displays 10 key points including features, uses, and examples.
-Responsive Design	Works smoothly across desktop, tablet, and mobile screens with adaptive layout.
-Gradient UI	Modern, visually appealing gradient-based interface for better user experience.
-Extensible Architecture	The modular design allows adding new models, datasets, or classes without changing core logic.
-Fast Feedback Loop	Users can try multiple images quickly and see predictions in real-time.
-Preprocessing Pipeline	Images are automatically resized and normalized for the ResNet model, ensuring accuracy.
-Error Handling	Provides user-friendly feedback if the uploaded file is invalid or unsupported.
-Educational Tool	Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.
-Future Work
 
+------------------------------------------------------
+## Features and Discription
+
+| **Feature**                 | **Description**                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Real-time Prediction**    | The system uses a pre-trained ResNet18 model to classify uploaded images instantly.                  |
+| **Interactive UI**          | Users can upload images directly from the browser and immediately preview them before prediction.    |
+| **Detailed Class Info**     | For each predicted class, the app displays **10 key points** including features, uses, and examples. |
+| **Responsive Design**       | Works smoothly across desktop, tablet, and mobile screens with adaptive layout.                      |
+| **Gradient UI**             | Modern, visually appealing gradient-based interface for better user experience.                      |
+| **Extensible Architecture** | The modular design allows adding new models, datasets, or classes without changing core logic.       |
+| **Fast Feedback Loop**      | Users can try multiple images quickly and see predictions in real-time.                              |
+| **Preprocessing Pipeline**  | Images are automatically resized and normalized for the ResNet model, ensuring accuracy.             |
+| **Error Handling**          | Provides user-friendly feedback if the uploaded file is invalid or unsupported.                      |
+| **Educational Tool**        | Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.   |
+
+-------------------------------------------------
+Future Work:
 Add support for all CIFAR-10 classes
 
 Deploy on Heroku / AWS for public access
@@ -121,7 +139,9 @@ Show prediction confidence scores alongside classes
 
 Option to compare multiple images side by side
 
-Author
+-------------------------------------
+
+Author:
 
 Atharva Chavhan
 Email: atharvachavhan18@gmail.com
