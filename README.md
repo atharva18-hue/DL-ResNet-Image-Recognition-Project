@@ -22,7 +22,11 @@ It can classify images into **CIFAR-10 categories** and shows **10 detailed poin
 - Modular and extensible architecture for adding new models or classes.
 - Modern, responsive, and visually appealing interface.
 
----
+--------------------------------------------
+## Project video
+https://github.com/user-attachments/assets/b361fe33-f833-44e7-ba3a-c01def5e495c
+
+----------------------------
 ## Features and Discription
 
 | **Feature**                 | **Description**                                                                                      |
@@ -140,7 +144,7 @@ Option to compare multiple images side by side
 Atharva Chavhan
 Email: atharvachavhan18@gmail.com
 
-GitHub: atharva18-hue
+GitHub: https://github.com/atharva18-hue
 
 Contact: +91 8767242559
 
