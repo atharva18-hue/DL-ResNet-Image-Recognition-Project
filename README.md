@@ -51,11 +51,6 @@ venv\Scripts\activate
 
 --------------------------------------------
 
-# Linux / Mac
-source venv/bin/activate
-
------------------------------------------
-
 ## 4. Install dependencies
 pip install -r requirements.txt
 
@@ -90,25 +85,23 @@ See predicted class & 10 detailed points about that class.
 Click Try Another to test a new image.
 
 -------------------------------------------------
+## **Folder Structure**
 
-## Folder Structure
-DL-ResNet-Image-Recognition-Project/
-│
-├── backend/
-│   ├── infer.py          # Image prediction logic
-│   ├── train.py          # Model training script
-│   └── checkpoint.pth    # Pre-trained ResNet model (excluded)
-│
-├── data/
-│   └── cifar-10-python.tar.gz  # CIFAR-10 dataset (excluded)
-│
-├── frontend/
-│   ├── index.html        # Web UI
-│   ├── style.css         # CSS styling
-│   └── script.js         # JS for image upload & prediction
-│
-├── requirements.txt      # Python dependencies
-└── app.py                # Flask app entry point
+| **Folder / File**          | **Description**                                     |
+|----------------------------|-----------------------------------------------------|
+| `backend/`                 | Contains backend scripts and trained model          |
+| `backend/infer.py`         | Logic for image prediction using ResNet18           |
+| `backend/train.py`         | Script to train the ResNet model                    |
+| `backend/checkpoint.pth`   | Pre-trained ResNet model (excluded from repo)       |
+| `data/`                    | Dataset storage folder                              |
+| `data/cifar-10-python.tar.gz` | CIFAR-10 dataset (excluded from repo)            |
+| `frontend/`                | Frontend files for web interface                    |
+| `frontend/index.html`      | HTML file for web UI                                |
+| `frontend/style.css`       | CSS styling for frontend                            |
+| `frontend/script.js`       | JavaScript for image upload & prediction            |
+| `requirements.txt`         | Python dependencies                                 |
+| `app.py`                   | Flask app entry point                               |
+
 
 
 ------------------------------------------------------
