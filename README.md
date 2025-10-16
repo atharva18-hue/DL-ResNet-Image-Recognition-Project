@@ -40,36 +40,36 @@ It can classify images into **CIFAR-10 categories** and shows **10 detailed poin
 ```bash
 git clone https://github.com/atharva18-hue/DL-ResNet-Image-Recognition-Project.git
 cd DL-ResNet-Image-Recognition-Project
+
+----------------------------------------------
 2. Create virtual environment
-bash
-Copy code
 python -m venv venv
+
 3. Activate virtual environment
-bash
-Copy code
 # Windows
 venv\Scripts\activate
 
 # Linux / Mac
 source venv/bin/activate
+
 4. Install dependencies
-bash
-Copy code
 pip install -r requirements.txt
+
 5. Download dataset & trained model
+
 Place cifar-10-python.tar.gz in data/
 
 Place checkpoint.pth in backend/
 
 6. Run the Flask app
-bash
-Copy code
 python app.py
+
 7. Open in browser
-cpp
-Copy code
 http://127.0.0.1:5000
-Usage
+
+
+Usage:
+
 Click Choose File to upload an image.
 
 Preview the image immediately.
@@ -79,8 +79,6 @@ See predicted class & 10 detailed points about that class.
 Click Try Another to test a new image.
 
 Folder Structure
-graphql
-Copy code
 DL-ResNet-Image-Recognition-Project/
 │
 ├── backend/
@@ -98,6 +96,7 @@ DL-ResNet-Image-Recognition-Project/
 │
 ├── requirements.txt      # Python dependencies
 └── app.py                # Flask app entry point
+
 Features (Detailed)
 Feature	Description
 Real-time Prediction	The system uses a pre-trained ResNet18 model to classify uploaded images instantly.
@@ -110,20 +109,23 @@ Fast Feedback Loop	Users can try multiple images quickly and see predictions in 
 Preprocessing Pipeline	Images are automatically resized and normalized for the ResNet model, ensuring accuracy.
 Error Handling	Provides user-friendly feedback if the uploaded file is invalid or unsupported.
 Educational Tool	Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.
-
 Future Work
-Add support for all CIFAR-10 classes.
 
-Deploy on Heroku / AWS for public access.
+Add support for all CIFAR-10 classes
 
-Implement drag-and-drop image upload.
+Deploy on Heroku / AWS for public access
 
-Show prediction confidence scores alongside classes.
+Implement drag-and-drop image upload
 
-Option to compare multiple images side by side.
+Show prediction confidence scores alongside classes
+
+Option to compare multiple images side by side
 
 Author
+
 Atharva Chavhan
 Email: atharvachavhan18@gmail.com
-GitHub: https://github.com/atharva18-hue
+
+GitHub: atharva18-hue
+
 Contact: +91 8767242559
