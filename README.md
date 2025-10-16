@@ -33,22 +33,20 @@ It can classify images into **CIFAR-10 categories** and shows **10 detailed poin
 - Deep learning & computer vision techniques  
 
 ---
-
 ## **Quickstart / Installation & Run**
 
 ### **1. Clone the repository**
-```bash
 git clone https://github.com/atharva18-hue/DL-ResNet-Image-Recognition-Project.git
 cd DL-ResNet-Image-Recognition-Project
 
 ----------------------------------------------
-2. Create virtual environment
+## 2. Create virtual environment
 python -m venv venv
 
 --------------------------------------
 
-3. Activate virtual environment
-# Windows
+## 3. Activate virtual environment
+**Windows**
 venv\Scripts\activate
 
 --------------------------------------------
@@ -58,11 +56,12 @@ source venv/bin/activate
 
 -----------------------------------------
 
-4. Install dependencies
+## 4. Install dependencies
 pip install -r requirements.txt
+
 -------------------------------------------------
 
-5. Download dataset & trained model
+## 5. Download dataset & trained model
 
 Place cifar-10-python.tar.gz in data/
 
@@ -70,16 +69,17 @@ Place checkpoint.pth in backend/
 
 ------------------------------------------
 
-6. Run the Flask app
+## 6. Run the Flask app
 python app.py
 
 ------------------------------
 
-7. Open in browser
+## 7. Open in browser
 http://127.0.0.1:5000
+
 --------------------------------------------------
 
-Usage:
+## Usage:
 
 Click Choose File to upload an image.
 
@@ -91,7 +91,7 @@ Click Try Another to test a new image.
 
 -------------------------------------------------
 
-Folder Structure
+## Folder Structure
 DL-ResNet-Image-Recognition-Project/
 │
 ├── backend/
@@ -128,7 +128,7 @@ DL-ResNet-Image-Recognition-Project/
 | **Educational Tool**        | Displays detailed points making it a great tool to understand characteristics of CIFAR-10 classes.   |
 
 -------------------------------------------------
-Future Work:
+## Future Work:
 Add support for all CIFAR-10 classes
 
 Deploy on Heroku / AWS for public access
@@ -141,7 +141,7 @@ Option to compare multiple images side by side
 
 -------------------------------------
 
-Author:
+## Author:
 
 Atharva Chavhan
 Email: atharvachavhan18@gmail.com
@@ -149,3 +149,5 @@ Email: atharvachavhan18@gmail.com
 GitHub: atharva18-hue
 
 Contact: +91 8767242559
+
+-------------------------------
