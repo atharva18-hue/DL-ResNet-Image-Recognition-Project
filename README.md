@@ -1,4 +1,4 @@
-# DL ResNet Image Recognition Project
+# CIFAR-10 ResNet18 Image Recognition Project
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)]()
 [![Flask](https://img.shields.io/badge/Flask-2.3.4-lightgrey?logo=flask&logoColor=black)]()
