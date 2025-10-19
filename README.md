@@ -1,4 +1,4 @@
-# CIFAR-10 ResNet18 Image Recognition
+# CIFAR-10 ResNet18 Image Recognition Deep learning 
 
 ---
 
