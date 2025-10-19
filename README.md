@@ -1,4 +1,4 @@
-# CIFAR-10 ResNet18 Image Recognition Project
+# CIFAR-10 ResNet18 Image Recognition
 
 ---
 
